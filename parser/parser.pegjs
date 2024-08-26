@@ -21,6 +21,8 @@
     OR: 1,
     NOT: 2
   };
+
+
 }
 
 
@@ -37,7 +39,7 @@ instruccionesp
 instruccion
   = inst:declaracion
   / inst:asignacion
-  / inst:COM_mult
+  / inst:expresion_numerica
 
 
 // declaracion -> tipo id = expresion;
@@ -119,6 +121,10 @@ tipo
     else if(type[1] === "boolean") return Type.BOOLEAN;
     else if(type[1] === "char") return Type.CHAR;
   }
+
+
+
+
 
 
 // expresiones regulares literal,terminal,primitivo

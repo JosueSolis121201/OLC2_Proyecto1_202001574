@@ -15,8 +15,7 @@ executeBtn.onclick = function () {
 };
 
 
-const codigo = `/d* sdsfsdf;
-dfssd S*/`;
+const codigo = `float`;
 const resultado = parse(codigo);
 console.log(resultado)
 

@@ -4,6 +4,7 @@
 
 import Arithmetic from "../expressions/arithmetic.js";
 import Type from "../symbol/type.js";
+import Symbol from "../symbol/symbol.js";
 import Logical from "../expressions/logical.js";
 import Relational from "../expressions/relational.js";
 import Literal from "../expressions/literal.js";
@@ -502,7 +503,7 @@ function peg$parse(input, options) {
     if (s0 === peg$FAILED) {
       s0 = peg$parseasignacion();
       if (s0 === peg$FAILED) {
-        s0 = peg$parseCOM_mult();
+        s0 = peg$parseexpresion_numerica();
       }
     }
 
@@ -1241,6 +1242,8 @@ function peg$parse(input, options) {
     OR: 1,
     NOT: 2
   };
+
+
 
   peg$result = peg$startRuleFunction();
 

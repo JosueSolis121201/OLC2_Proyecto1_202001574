@@ -4,6 +4,7 @@ module.exports = {
   dependencies: {
     Arithmetic: "../expressions/arithmetic.js",
     Type: "../symbol/type.js",
+    Symbol: "../symbol/symbol.js",
     Logical: "../expressions/logical.js",
     Relational: "../expressions/relational.js",
     Literal: "../expressions/literal.js",
